@@ -1,4 +1,5 @@
 module.exports = {
+  publicPath: './public_html/',
   entry: [
 	  'whatwg-fetch',
 	  './src/index.js',
@@ -6,12 +7,12 @@ module.exports = {
 
   output: {
     path: './public_html',
-    publicPath: 'public_html/',
-    filename: 'bundle.js'
+    filename: 'bundle.js',
+    publicPath: './public_html/'
   },
 
   devServer: {
-	contentBase: "public_html"
+	   contentBase: "./public_html"
   },
 
   resolve: {
