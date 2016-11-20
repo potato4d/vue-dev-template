@@ -36,9 +36,7 @@ h1{
 module.exports = {
 	data: () => {
 		return {
-			stores: {
-				ApplicationStore : require("../../stores/ApplicationStore.js")
-			}
+			stores: require("../../stores/Stores.js")
 		};
 	}
 }
