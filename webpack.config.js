@@ -1,8 +1,8 @@
 module.exports = {
   publicPath: './public_html/',
   entry: [
-	  'whatwg-fetch',
-	  './src/index.js',
+    'whatwg-fetch',
+    './src/index.js',
   ],
 
   output: {
@@ -12,7 +12,7 @@ module.exports = {
   },
 
   devServer: {
-	   contentBase: "./public_html"
+    contentBase: "./public_html"
   },
 
   resolve: {
