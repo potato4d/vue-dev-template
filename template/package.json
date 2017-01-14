@@ -1,9 +1,10 @@
 {
-  "name": "vue-dev-template",
+  "name": "{{name}}",
   "version": "0.0.1",
-  "description": "Vue.js develop template.",
+  "description": "{{description}}",
   "main": "src/index.js",
   "scripts": {
+    "node": "npm run node",
     "start": "npm run serve",
     "lint": "eslint ./src/ --ext=js,vue",
     "lint:fix": "eslint ./src --fix --ext=js,vue",
@@ -18,7 +19,7 @@
     "type": "git",
     "url": "git+https://github.com/potato4d/vue-dev-template.git"
   },
-  "author": "Potato4d",
+  "author": "{{author}}",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/potato4d/vue-dev-template/issues"

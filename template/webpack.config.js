@@ -7,8 +7,7 @@ module.exports = {
 
   output: {
     path: './public_html',
-    filename: 'bundle.js',
-    publicPath: './public_html/'
+    filename: 'bundle.js'
   },
 
   devServer: {

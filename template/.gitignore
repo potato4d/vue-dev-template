@@ -1,0 +1,4 @@
+node_modules/
+public_html/bundle.js
+.env
+npm-debug.log

@@ -4,13 +4,13 @@ Vue.use(VueRouter);
 
 const App = Vue.extend(require("./App.vue"));
 
-const Fetch = require("./utilitys/Fetch");
+const Fetch = require("./utilities/Fetch");
 
 // Stores
 
 // Components
 
-Vue.component("btn", require("./components/Btn.vue"));
+Vue.component("greeting", require("./components/Greeting.vue"));
 
 // Pages
 
