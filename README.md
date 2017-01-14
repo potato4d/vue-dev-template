@@ -7,3 +7,20 @@ This is a boiler plate for building a modern front-end development environment u
 
 A detailed explanation about this environment will be in Japanese, but it is possible to browse it below.
 http://qiita.com/potato4d/items/55a60f21c26bf889afd5
+
+## Usage
+
+If you have not introduced vue-cli yet:
+
+```
+$ npm install -g vue-cli 
+```
+
+```
+$ vue init potato4d/vue-dev-template project-name
+$ cd $_
+$ npm install
+$ npm start
+```
+
+Open http://localhost:8080 on your default browser.
