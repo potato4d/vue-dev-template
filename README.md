@@ -16,6 +16,8 @@ If you have not introduced vue-cli yet:
 $ npm install -g vue-cli 
 ```
 
+Create project command.
+
 ```
 $ vue init potato4d/vue-dev-template project-name
 $ cd $_
