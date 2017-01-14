@@ -1,6 +1,6 @@
 <template lang="html">
 	<p>
-		Hello, {{name}}
+		Hello, \{{name}}
 	</p>
 </template>
 
