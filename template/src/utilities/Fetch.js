@@ -1,6 +1,6 @@
 const Fetch = function (endpoint, method, params){
 	const options = {
-		API: "http://example.com",
+		API: process.env.API_ROOT,
 		cache: "no-cache"
 	};
 

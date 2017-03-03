@@ -1,5 +1,5 @@
 const Vue = require("vue");
-const VueRouter = require("vue-router");
+const VueRouter = require("vue-router").default;
 Vue.use(VueRouter);
 
 const App = Vue.extend(require("./App.vue"));
