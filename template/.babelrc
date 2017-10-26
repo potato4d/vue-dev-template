@@ -1,4 +1,15 @@
 {
-  "presets": ["es2015"],
+  "presets": [
+    [
+      "env",
+      {
+        "modules": false,
+        "targets": {
+          "browsers": ["> 2%"],
+          "uglify": true
+        }
+      }
+    ]
+  ],
   "plugins": ["transform-runtime"]
 }

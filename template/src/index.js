@@ -1,38 +1,19 @@
-const Vue = require("vue");
-const VueRouter = require("vue-router").default;
-Vue.use(VueRouter);
+import Vue from 'vue'
+import VueRouter from 'vue-router'
+import App from '@/App.vue'
+import routes from '@/routes'
 
-const App = Vue.extend(require("./App.vue"));
-
-const Fetch = require("./utilities/Fetch");
-
-// Stores
-
-// Components
-
-Vue.component("greeting", require("./components/Greeting.vue"));
-
-// Pages
-
-const Welcomes = {
-	index: require("./pages/welcomes/index.vue")
-};
-
-// Routing
-
-const routes = [
-	{
-		path: "/",
-		component: Welcomes["index"]
-	}
-];
+Vue.use(VueRouter)
 
 const router = new VueRouter({
-	routes: routes
-});
+  mode: 'history',
+  routes
+})
 
-const app = new Vue({
-	el: "#app",
-	render: h => h(App),
-	router
-});
+/* eslint-disable */
+new Vue({
+  el: '#app',
+  render: h => h(App),
+  router
+})
+/* eslint-enable */
