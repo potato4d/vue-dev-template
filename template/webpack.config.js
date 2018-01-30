@@ -1,12 +1,13 @@
-const path = require('path');
-const webpack = require('webpack');
-const Dotenv = require('dotenv-webpack');
+const path = require('path')
+const webpack = require('webpack')
+const Dotenv = require('dotenv-webpack')
+const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
   entry: './src/index.js',
   output: {
     filename: 'bundle.js',
-    path: path.resolve(__dirname, 'public_html')
+    path: path.resolve(__dirname, 'static')
   },
   module: {
     rules: [
@@ -38,15 +39,15 @@ module.exports = {
     }
   },
   devServer: {
-    contentBase: path.resolve(__dirname, 'public_html'),
+    contentBase: path.resolve(__dirname, 'static'),
     publicPath: '/',
     historyApiFallback: true,
     open: true
   },
   plugins: [
-    new Dotenv({
-      path: './.env',
-      safe: true
+    new Dotenv({ path: './.env', safe: true }),
+    new HtmlWebpackPlugin({
+      filename: 'index.html', template: 'index.html', inject: true
     })
   ]
-};
+}

@@ -4,10 +4,6 @@
   </div>
 </template>
 
-<style scoped>
-
-</style>
-
 <script>
 import MyGreeting from '@/components/MyGreeting.vue'
 import Stores from '@/stores/Stores'
@@ -23,3 +19,7 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+
+</style>
