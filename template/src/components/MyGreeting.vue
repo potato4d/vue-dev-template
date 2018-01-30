@@ -1,4 +1,4 @@
-<template lang="html">
+<template>
   <p>
     Hello, \{{name}}
   </p>
@@ -10,9 +10,15 @@
 
 <script>
 export default {
-  props: ['name'],
+  props: {
+    name: {
+      type: String,
+      required: true
+    }
+  },
   data () {
     return {
+      
     }
   }
 }

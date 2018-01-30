@@ -1,6 +1,6 @@
-<template lang="html">
+<template>
   <div class="content">
-    <greeting name="Vue.js"></greeting>
+    <MyGreeting name="Vue.js" />
   </div>
 </template>
 
@@ -9,12 +9,12 @@
 </style>
 
 <script>
-import Greeting from '@/components/Greeting.vue'
+import MyGreeting from '@/components/MyGreeting.vue'
 import Stores from '@/stores/Stores'
 
 export default {
   components: {
-    Greeting
+    MyGreeting
   },
   data () {
     return {

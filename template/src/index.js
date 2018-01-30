@@ -4,11 +4,7 @@ import App from '@/App.vue'
 import routes from '@/routes'
 
 Vue.use(VueRouter)
-
-const router = new VueRouter({
-  mode: 'history',
-  routes
-})
+const router = new VueRouter({ routes })
 
 /* eslint-disable */
 new Vue({
