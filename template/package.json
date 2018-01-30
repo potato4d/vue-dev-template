@@ -7,6 +7,7 @@
   "scripts": {
     "node": "node",
     "start": "npm run serve",
+    "dev": "npm run serve",
     "lint": "eslint ./src/ --ext=js,vue",
     "lint:fix": "eslint ./src --fix --ext=js,vue",
     "lint:safe": "eslint ./src --ext=js,vue ;exit 0",
@@ -45,5 +46,8 @@
     "vue-template-compiler": "~2.5.2",
     "webpack": "^3.6.0",
     "webpack-dev-server": "^2.9.3"
+  },
+  "dependencies": {
+    "html-webpack-plugin": "^2.30.1"
   }
 }

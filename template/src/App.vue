@@ -6,6 +6,21 @@
   </div>
 </template>
 
+<script>
+export default {
+
+}
+</script>
+
+<style>
+/* global style */
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+</style>
+
 <style scoped>
 #app{
   width: 100%;
@@ -26,9 +41,3 @@
   justify-content: center;
 }
 </style>
-
-<script>
-export default {
-  
-}
-</script>
