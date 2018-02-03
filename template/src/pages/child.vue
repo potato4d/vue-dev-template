@@ -1,7 +1,7 @@
 <template>
   <div class="content">
-    <router-link to="/">Back to top</router-link><br>
-    child page
+    <router-link to="/">Back to top</router-link>
+    <p>child page</p>
   </div>
 </template>
 
@@ -11,5 +11,7 @@ export default {
 </script>
 
 <style scoped>
-
+p {
+  font-size: 1.25em;
+}
 </style>
