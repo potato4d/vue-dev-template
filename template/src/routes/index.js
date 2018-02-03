@@ -1,6 +1,8 @@
 import Vue from 'vue'
-import WelcomeIndex from '@/pages/welcomes/index.vue'
+import IndexComponent from '@/pages/index.vue'
+import ChildComponent from '@/pages/child.vue'
 
 export default [
-  { path: '/', component: WelcomeIndex }
+  { path: '/', component: IndexComponent },
+  { path: '/child', component: ChildComponent }
 ]

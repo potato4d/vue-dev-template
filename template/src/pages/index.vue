@@ -1,21 +1,20 @@
 <template>
   <div class="content">
-    <MyGreeting name="Vue.js" />
+    <router-link to="/child">Go to child</router-link>
+    <MyGreeting :name="appName" />
   </div>
 </template>
 
 <script>
+import { mapGetters } from 'vuex'
 import MyGreeting from '@/components/MyGreeting.vue'
-import Stores from '@/stores/Stores'
 
 export default {
   components: {
     MyGreeting
   },
-  data () {
-    return {
-      Stores
-    }
+  computed: {
+    ...mapGetters(['appName'])
   }
 }
 </script>
