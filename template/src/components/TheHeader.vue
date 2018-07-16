@@ -7,8 +7,7 @@
 </template>
 
 <script>
-export default {
-}
+export default {}
 </script>
 
 <style scoped>
@@ -20,7 +19,7 @@ export default {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #41B883;
+  background: #41b883;
   color: #fff;
   line-height: 0;
 }
@@ -28,7 +27,7 @@ export default {
 .app-header h1 {
   margin: 0;
   padding: 0;
-  line-height: 1.0;
+  line-height: 1;
   font-size: 18px;
 }
 </style>

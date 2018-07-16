@@ -1,6 +1,8 @@
 <template>
   <div class="content">
-    <router-link to="/child">Go to child</router-link>
+    <router-link to="/child">
+      Go to child page ≫
+    </router-link>
     <AppGreeting :name="appName" />
   </div>
 </template>
@@ -20,5 +22,4 @@ export default {
 </script>
 
 <style scoped>
-
 </style>

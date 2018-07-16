@@ -7,6 +7,7 @@
 <style scoped>
 p {
   font-size: 1.25em;
+  text-align: center;
 }
 </style>
 
@@ -18,10 +19,8 @@ export default {
       required: true
     }
   },
-  data () {
-    return {
-
-    }
+  data() {
+    return {}
   }
 }
 </script>
