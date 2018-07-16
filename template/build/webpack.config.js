@@ -1,13 +1,14 @@
 const path = require('path')
 const webpack = require('webpack')
-const Dotenv = require('dotenv-webpack')
+
+const VueLoaderPlugin = require('vue-loader/lib/plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
-  entry: './src/index.js',
+  entry: path.resolve(__dirname, '../src/index.js'),
   output: {
     filename: 'bundle.js',
-    path: path.resolve(__dirname, 'static')
+    path: path.resolve(__dirname, '../static')
   },
   module: {
     rules: [
@@ -35,19 +36,24 @@ module.exports = {
   resolve: {
     alias: {
       vue: 'vue/dist/vue.esm.js',
-      '@': path.resolve(__dirname, 'src/'),
+      '@': path.resolve(__dirname, '../src/'),
+      '~': path.resolve(__dirname, '../src/'),
     }
   },
-  devServer: {
-    contentBase: path.resolve(__dirname, 'static'),
-    publicPath: '/',
+  serve: {
+    content: path.resolve(__dirname, '../static'),
     historyApiFallback: true,
+    port: 8080,
     open: true
   },
   plugins: [
-    new Dotenv({ path: './.env', safe: true }),
+    new VueLoaderPlugin(),
+    new webpack.EnvironmentPlugin([
+      'NODE_ENV',
+      'API_ROOT'
+    ]),
     new HtmlWebpackPlugin({
-      filename: 'index.html', template: 'index.html', inject: true
+      filename: 'index.html', template: path.resolve(__dirname, '../src/index.html'), inject: true
     })
   ]
 }

@@ -1,17 +1,17 @@
 <template>
   <div class="content">
     <router-link to="/child">Go to child</router-link>
-    <MyGreeting :name="appName" />
+    <AppGreeting :name="appName" />
   </div>
 </template>
 
 <script>
 import { mapGetters } from 'vuex'
-import MyGreeting from '@/components/MyGreeting.vue'
+import AppGreeting from '@/components/AppGreeting.vue'
 
 export default {
   components: {
-    MyGreeting
+    AppGreeting
   },
   computed: {
     ...mapGetters(['appName'])
