@@ -7,7 +7,7 @@
 
 <script>
 import { mapGetters } from 'vuex'
-import AppGreeting from '@/components/AppGreeting.vue'
+import AppGreeting from '~/components/AppGreeting.vue'
 
 export default {
   components: {

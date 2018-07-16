@@ -1,8 +1,6 @@
 <template>
   <div id="app">
-    <div id="content">
-      <router-view></router-view>
-    </div>
+    <router-view />
   </div>
 </template>
 
@@ -13,29 +11,26 @@ export default {
 </script>
 
 <style>
-/* global style */
+/* global CSS */
 html,
 body {
   margin: 0;
   padding: 0;
+  font-family: sans-serif;
+}
+
+a,
+a:visited {
+  color: #45A5E5;
 }
 </style>
 
 <style scoped>
-#app{
+#app {
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   margin: 0;
   padding: 0;
-}
-
-#content{
-  width: 100%;
-  height: 100%;
-
-  margin: 0;
-  padding: 0;
-
   display: flex;
   flex-direction: column;
 }
