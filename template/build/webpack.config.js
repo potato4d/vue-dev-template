@@ -44,7 +44,8 @@ module.exports = {
     content: path.resolve(__dirname, '../static'),
     historyApiFallback: true,
     port: 8080,
-    open: true
+    open: true,
+    hot: true
   },
   plugins: [
     new VueLoaderPlugin(),
