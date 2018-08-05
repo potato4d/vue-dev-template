@@ -1,6 +1,6 @@
 # Modern Vue.js Develop Template.
 
-This template is compatible with vue-cli template.  
+This template is compatible with vue-cli template.
 Therefore, we recommend using vue-cli for introduction.
 
 This is a boiler plate for building a modern front-end development environment using Vue.js.
@@ -10,10 +10,11 @@ http://qiita.com/potato4d/items/55a60f21c26bf889afd5
 
 ## Usage
 
-If you have not introduced vue-cli yet:
+If you have not introduced Vue CLI yet:
 
 ```
-$ npm install -g vue-cli 
+$ npm install -g @vue/cli
+$ npm install -g @vue/cli-init
 ```
 
 Create project command.
